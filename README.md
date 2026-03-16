@@ -130,14 +130,19 @@ Open http://localhost:3000 in your browser.
 
 ## 🔐 Authentication / Test Accounts
 
-This app uses Supabase Auth. There are no pre-seeded accounts in the repository.
+This app uses Supabase Auth.
 
+### Live Demo Credentials
+For the live demo at https://ai-note-taking-app-ten.vercel.app/, use these test credentials:
+
+- **Email:** test1@gmail.com
+- **Password:** 12345678
+
+### Local Development
 To test the app locally:
 
 - Sign up with any working email and password
 - Sign in using the same credentials
-
-> If you want demo credentials, create them in your Supabase dashboard and paste them here.
 
 ---
 
