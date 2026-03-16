@@ -1,3 +1,5 @@
+'use client';
+
 import { AuthProvider } from "@/lib/auth-context";
 import { ThemeProvider } from "@/lib/theme-context";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";

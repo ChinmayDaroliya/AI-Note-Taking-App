@@ -1,31 +1,31 @@
 generator client {
-    provider = "prisma-client-js"
+  provider = "prisma-client-js"
 }
 
 datasource db {
-    provider = "postgresql"
-    url = env("DATABASE_URL")
+  provider = "postgresql"
+  url = env("DATABASE_URL")
 }
 
 model Note {
-    id             string      @id @default(cuid())
-    title          string      
-    content        string
-    tags           string[]
-    user_id        string
-    created_at     DateTime    @default(now())
-    updated_at     DateTime    @updatedAt
+  id         String   @id @default(cuid())
+  title      String
+  content    String
+  tags       String[]
+  user_id    String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
 
-    @@map("notes")   
- }
+  @@map("notes")
+}
 
- model Profile{
-    id             string       @id @default(cuid())
-    user_id        string       @unique
-    display_name   string?
-    avatar_url     string?
-    created_at     DateTime     @default(now())
-    updated_at     DateTime     @updatedAt
+model Profile {
+  id           String   @id @default(cuid())
+  user_id      String   @unique
+  display_name String?
+  avatar_url   String?
+  created_at   DateTime @default(now())
+  updated_at   DateTime @updatedAt
 
-    @@map("profiles")
- }
+  @@map("profiles")
+}
